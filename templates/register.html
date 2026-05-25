@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Register</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <h1>Register Profile</h1>
+
+    <form action="/save" method="POST">
+
+        <input type="text"
+        name="name"
+        placeholder="Full Name"
+        required>
+
+        <input type="number"
+        name="age"
+        placeholder="Age"
+        required>
+
+        <select name="gender">
+
+            <option>Bride</option>
+
+            <option>Groom</option>
+
+        </select>
+
+        <input type="text"
+        name="district"
+        placeholder="District">
+
+        <input type="text"
+        name="education"
+        placeholder="Education">
+
+        <input type="text"
+        name="phone"
+        placeholder="Phone Number">
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
